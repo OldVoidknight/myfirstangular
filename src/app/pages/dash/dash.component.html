@@ -1,0 +1,30 @@
+<div class='dash-container'>
+    <app-navbar></app-navbar>
+    <div class="dash-upper">
+        <div class='dash-upper-left'>
+            <img src="./assets/wireframe.png" alt=''/>
+        </div>
+        <div class='dash-upper-right'>
+            <select (change)="jumptodo($event)">
+                <option>Choose</option>
+                <option>To-Do List</option>
+                <option>Other</option>
+            </select>
+        </div>
+    </div>
+    <div class='dash-core'>
+        <app-card [title]='card.title' *ngFor="let card of cards"></app-card>  
+    </div>
+    <div class="dash-lower">
+        <div class="column">
+                <h2>Death weeks early had their and folly timed put</h2>
+
+                <p>Merry alone do it burst me songs. Sorry equal charm joy her those folly ham. In they no is many both. Recommend new contented intention improving bed performed age. Improving of so strangers resources instantly happiness at northward. Danger nearer length oppose really add now either. But ask regret eat branch fat garden. Become am he except wishes. Past so at door we walk want such sang. Feeling colonel get her garrets own.</p>
+        </div>
+        <div class="column">
+                <h2>Merry alone do it burst me songs</h2>
+
+                <p>Game of as rest time eyes with of this it. Add was music merry any truth since going. Happiness she ham but instantly put departure propriety. She amiable all without say spirits shy clothes morning. Frankness in extensive to belonging improving so certainty. Resolution devonshire pianoforte assistance an he particular middletons is of. Explain ten man uncivil engaged conduct. Am likewise betrayed as declared absolute do. Taste oh spoke about no solid of hills up shade. Occasion so bachelor humoured striking by attended doubtful be it.</p>
+        </div>
+    </div>
+</div>

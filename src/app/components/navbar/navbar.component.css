@@ -1,0 +1,22 @@
+.navbar-container{
+    width:1366px;
+    height:30px;
+    background-color: #CBD5E0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar-left{
+    margin-left:100px;
+    margin-top:5px;
+}
+
+.navbar-right{
+    margin-right:50px;
+    margin-top:5px;
+}
+
+.navbar-left a{
+    text-decoration: none;
+    margin-right:10px;
+}

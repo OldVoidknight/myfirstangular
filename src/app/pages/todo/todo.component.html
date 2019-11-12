@@ -1,0 +1,21 @@
+<div class="todo-container">
+    <div class="todo-wrapper">
+        <input name="task" type="text" [(ngModel)]="task" placeholder="Enter Your Task Here">
+        <button (click)="addTask()">Add</button>
+        <div class="todo-list">
+            <p>To-Do List</p>
+            <div class="todo-list-view">
+                <table>
+                    <tr>
+                        <th>Task</th>
+                        <th>Action</th>
+                    </tr>
+                    <tr *ngFor="let todo of todoArray">
+                        <td><p>{{todo}}</p></td>
+                        <td><input type="checkbox" (click)="deleteTask()">Done!</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

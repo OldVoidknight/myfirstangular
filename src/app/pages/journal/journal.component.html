@@ -1,0 +1,16 @@
+
+<div class="journal-container">
+    <div class="entry-input">
+        <form #f="ngForm" (ngSubmit)="addEntry()">
+            <input name="entrydate" type="date" [(ngModel)]="entries.entrydate">
+            <textarea name="entrycontent" placeholder="What's on your mind?" [(ngModel)]="entries.entrycontent"></textarea>
+            <button type="submit">Post!</button>
+        </form>
+    </div>
+    <div class="entry-view">
+        <div id="entry" *ngFor="let entry of entries">
+            <h4></h4>
+            <p></p>
+        </div>
+    </div>
+</div>
