@@ -19,4 +19,8 @@ cards=[{title:'TodoList'},{title:'card b'}]
     console.log($event)
     this.router.navigate(['todo'])
   }
+
+  logout(){
+    this.router.navigate([''])
+  }
 }

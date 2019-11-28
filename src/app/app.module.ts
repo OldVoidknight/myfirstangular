@@ -6,8 +6,10 @@ import { AppRoutingModule, components } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CardComponent } from './components/card/card.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import {UserService} from './user.service';
+import {ReactiveFormsModule} from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
-import {ReactiveFormsModule} from '@angular/forms'
 
 
 
@@ -22,9 +24,10 @@ import {ReactiveFormsModule} from '@angular/forms'
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [UserService],
   schemas: [NO_ERRORS_SCHEMA],
   bootstrap: [AppComponent]
 })

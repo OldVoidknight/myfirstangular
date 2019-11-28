@@ -21,6 +21,10 @@
     height:100%;
 }
 
+.entry-input button{
+    width:102%;
+}
+
 .entry-view{
     border: 5px double #4c51bf;
     height:300px;
@@ -33,4 +37,17 @@
     background-color: white;
     height:150px;
     width:100%;
+    padding:none;
+}
+
+#entry h4{
+    margin-left: 50px;
+    color: #000000;
+    background: #FFFFFF;
+    text-shadow: 2px 2px 0 #bcbcbc, 4px 4px 0 #9c9c9c;
+}
+
+#entry p{
+    border-top: 2px solid grey;
+    padding: 10px;
 }

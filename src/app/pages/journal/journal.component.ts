@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class JournalComponent implements OnInit {
   entries=[{entrydate:'',entrycontent:''}]
+
   // entryArray=new FormGroup({
   //   entrydate:new FormControl(''),
   //   entrycontent:new FormControl('')
